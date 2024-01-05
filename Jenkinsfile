@@ -20,13 +20,13 @@ pipeline {
         }
 
       // stage('Maven Build') {
-            steps {
-                script {
+         //   steps {
+           //     script {
                     // Add Maven build command here
-                    sh 'mvn clean install'
-                }
-            }
-        }
+             //       sh 'mvn clean install'
+               // }
+      //      }
+        //}
 
         stage('Building image') {
             steps {
