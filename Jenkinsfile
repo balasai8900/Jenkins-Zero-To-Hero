@@ -3,23 +3,23 @@ pipeline {
 
     environment {
         imagename = "sysmaster/sysmasterapp-${env.BUILD_ID}"
-        registryCredential = 'GitLab_Credentials_369258'
+       # registryCredential = 'GitLab_Credentials_369258'
         dockerImage = ''
-        registryUrl = 'http://172.206.237.112'  // Replace with your Docker registry IP address
+        registryUrl = 'http://3.108.56.62'  // Replace with your Docker registry IP address
     }
 
     stages {
         stage('Cloning Git') {
             steps {
                 git(
-                    url: 'http://172.206.237.112/jenkins/travel-sysmaster-data-micro-service.git',
-                    branch: 'master',
-                    credentialsId: 'GitLab_Credentials_369258'
+                    url: 'https://github.com/balasai8900/Jenkins-Zero-To-Hero/edit/main/Jenkinsfile#L6C56',
+                    branch: 'main',
+                    # credentialsId: 'GitLab_Credentials_369258'
                 )
             }
         }
 
-        stage('Maven Build') {
+      #  stage('Maven Build') {
             steps {
                 script {
                     // Add Maven build command here
