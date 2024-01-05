@@ -12,7 +12,7 @@ pipeline {
         stage('Cloning Git') {
             steps {
                 git(
-                    url: 'https://github.com/balasai8900/Jenkins-Zero-To-Hero/edit/main/Jenkinsfile#L6C56',
+                    url: 'https://github.com/balasai8900/Jenkins-Zero-To-Hero.git',
                     branch: 'main',
                     // credentialsId: 'GitLab_Credentials_369258'
                 )
