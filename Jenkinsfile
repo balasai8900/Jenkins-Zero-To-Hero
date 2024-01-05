@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         imagename = "sysmaster/sysmasterapp-${env.BUILD_ID}"
-       # registryCredential = 'GitLab_Credentials_369258'
+       // registryCredential = 'GitLab_Credentials_369258'
         dockerImage = ''
         registryUrl = 'http://3.108.56.62'  // Replace with your Docker registry IP address
     }
@@ -14,12 +14,12 @@ pipeline {
                 git(
                     url: 'https://github.com/balasai8900/Jenkins-Zero-To-Hero/edit/main/Jenkinsfile#L6C56',
                     branch: 'main',
-                    # credentialsId: 'GitLab_Credentials_369258'
+                    // credentialsId: 'GitLab_Credentials_369258'
                 )
             }
         }
 
-      #  stage('Maven Build') {
+      // stage('Maven Build') {
             steps {
                 script {
                     // Add Maven build command here
